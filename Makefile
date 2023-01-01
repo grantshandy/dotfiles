@@ -24,8 +24,8 @@ pull:
 	cp $(HELIX_DIR)/$(HELIX_LANG) .
 
 	cp $(SWAY_DIR)/$(SWAY_CONF) .
-	cp ~/.$(P10K) .
-	cp ~/.$(ZSHRC) .
+	cp ~/.$(P10K) ./$(P10K)
+	cp ~/.$(ZSHRC) ./$(ZSHRC)
 
 push:
 	cp $(KITTY_CONF) $(KITTY_DIR)/$(KITTY_CONF)
