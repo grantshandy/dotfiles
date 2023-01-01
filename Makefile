@@ -1,4 +1,4 @@
-DEPENDENCIES="sway swaybg kitty helix zsh zsh-theme-powerlevel10k-git lightdm"
+DEPENDENCIES="sway swaybg bemenu kitty helix zsh zsh-theme-powerlevel10k-git lightdm"
 
 CONFIG_DIR=~/.config
 
