@@ -1,7 +1,22 @@
 [[language]]
 name = "rust"
-auto-format = false
 
 [[language]]
 name = "zig"
-auto-format = false
+
+[[language]]
+name = "css"
+
+[[language]]
+name = "javascript"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "javascript" }
+
+[[language]]
+name = "typescript"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+config = { enable = true, lint = true, unstable = true }
+language-server = { command = "deno", args = ["lsp"], language-id = "typescript" }

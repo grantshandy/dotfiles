@@ -1,9 +1,6 @@
-DEPENDENCIES="sway swaybg bemenu kitty helix zsh zsh-theme-powerlevel10k-git lightdm"
+DEPENDENCIES="kitty helix zsh zsh-theme-powerlevel10k-git"
 
 CONFIG_DIR=~/.config
-
-SWAY_CONF=config
-SWAY_DIR=$(CONFIG_DIR)/sway
 
 KITTY_CONF=kitty.conf
 KITTY_THEME=current-theme.conf
@@ -23,7 +20,6 @@ pull:
 	cp $(HELIX_DIR)/$(HELIX_CONF) .
 	cp $(HELIX_DIR)/$(HELIX_LANG) .
 
-	cp $(SWAY_DIR)/$(SWAY_CONF) .
 	cp ~/.$(P10K) ./$(P10K)
 	cp ~/.$(ZSHRC) ./$(ZSHRC)
 
@@ -34,7 +30,6 @@ push:
 	cp $(HELIX_CONF) $(HELIX_DIR)/$(HELIX_CONF)
 	cp $(HELIX_LANG) $(HELIX_DIR)/$(HELIX_LANG)
 
-	cp $(SWAY_CONF) $(SWAY_DIR)/$(SWAY_CONF)
 	cp $(P10K) ~/.$(P10K)
 	cp $(ZSHRC) ~/.$(ZSHRC)
 
